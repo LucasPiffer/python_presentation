@@ -22,6 +22,7 @@ def can_drink(person):
     else:
         return 'Must drink'
 
+
 people = [
     factory('Alfredo', 34),
     factory('Mariazinha', 14),
