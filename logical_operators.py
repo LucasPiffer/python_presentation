@@ -1,0 +1,8 @@
+print('AND operator -', True and False)
+print('OR operator -', True or False)
+print('NOT operator - ', not True or False)
+print('AND operator', 'Olá' or False)
+print('AND operator', True and not False)
+print('None and AND operator', None or False)
+print('None and AND operator', None or "Lucas")
+print('None and AND operator', not None and "Lucas")
