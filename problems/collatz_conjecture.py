@@ -5,7 +5,7 @@ number_with_max_iterations = {"number": start_at, "count": 1}
 
 for i in range(start_at, 1000000):
     number = i
-    total = 1
+    total = 0
 
     while number > 1:
         total += 1
