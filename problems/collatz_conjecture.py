@@ -3,7 +3,7 @@
 start_at = 2
 number_with_max_iterations = {"number": start_at, "count": 1}
 
-for i in range(start_at, 100):
+for i in range(start_at, 1000000):
     number = i
     total = 1
 
@@ -15,7 +15,8 @@ for i in range(start_at, 100):
         else:
             number = number * 3 + 1
     else:
-        number_with_max_iterations["number"] = i
-        number_with_max_iterations["count"] = total
+        if total > number_with_max_iterations["count"]:
+            number_with_max_iterations["number"] = i
+            number_with_max_iterations["count"] = total
 
 print(number_with_max_iterations)
